@@ -40,7 +40,7 @@ a {
     width: 40px;
     height: 20px;
     text-align: center;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) ;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%) ;
     z-index: 0;
 }
 
@@ -57,7 +57,7 @@ a {
     transform: translate(-50%, -50%) scale(0.7);
     width: 100vw;
     height: 100vh;
-    /* clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%); */
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
     will-change: transform;
     z-index: 1;
 }
@@ -68,8 +68,8 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-color: #1a1a1a; */
-    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    background-color: #1a1a1a;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
     z-index: 2;
     
 }
@@ -103,9 +103,8 @@ nav {
     width: 100%;
     top: -5%;
     left: 0;
-    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
     z-index: 1;
-
 }
 
 .header h1{
@@ -113,10 +112,60 @@ nav {
     font-size: 38.5vw;
     font-weight: lighter;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     line-height: 100%;
 }
 
+@font-face {
+    font-family: 'Blanquotey';
+    src: url('./fonts/Blanquotey.ttf');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'Test Söhne';
+    src: url("./fonts/test-soehne-fett.woff2");
+    font-style: normal;
+    font-weight: lighter;
+ } /
+
+.header h1 span {
+    position: relative;
+    display: inline-block;
+    transform: translateY(500px);
+}
+
+.hero-img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35vh;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.hero-img img {
+    translate: scale(2);
+}
+
+@media (max-width: 900px) {
+    .nav-col:nth-child(1) .nav-items:nth-child(2) p {
+        text-align: right;
+    }
+
+    .nav-col:nth-child(2) {
+        display: none;
+    }
+
+    .header {
+        top: 30%;
+    }
+
+    .hero-img {
+        height: 50vh;
+    }
+}
 
 
