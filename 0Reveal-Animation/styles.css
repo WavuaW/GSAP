@@ -127,9 +127,8 @@ nav {
 @font-face {
     font-family: 'Test Söhne';
     src: url("./fonts/test-soehne-fett.woff2");
-    font-style: normal;
     font-weight: lighter;
- } /
+ }
 
 .header h1 span {
     position: relative;

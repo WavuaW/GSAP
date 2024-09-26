@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     delay: 0.25
                 });
 
-                gsap.to("header h1 span", {
+                gsap.to(".header h1 span", {
                     y: 0,
                     stagger: 0.1,
                     duration: 2,
