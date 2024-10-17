@@ -12,6 +12,13 @@ body {
     overflow: hidden;
 }
 
+@font-face {
+    font-family: 'Mak';
+    src: url('/font/mak-3.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 .container-items {
     position: absolute;
     bottom: 0;
@@ -20,4 +27,17 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+.item {
+    position: relative;
+    flex-grow: 1;
+    font-family: "Mak", sans-serif;
+    font-size: 220px;
+    transition: all 300ms ease-in-out;
+}
+
+.item:hover {
+    flex-grow: 2;
+    font-size: 400px;
 }
