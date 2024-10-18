@@ -15,7 +15,7 @@ body {
 @font-face {
     font-family: 'Mak';
     src: url('/font//mak/MAK.otf'),
-    src: url('/font//mak/MAK-bold.otf');
+        url('/font//mak/MAK-bold.otf');
     font-weight: normal;
     font-style: normal;
   }
