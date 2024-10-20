@@ -31,42 +31,42 @@
                     <div class="container-img"></div>
                 </div>
                 <div class="item">
-                    <a href="#" class="container-item" data-img="./img/image2.jpg">
+                    <a href="#" class="container-item" data-img="./img/image5.jpg">
                         <h3>1</h3>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="container-item" data-img="./img/image1.jpg">
+                    <a href="#" class="container-item" data-img="./img/image7.jpg">
                         <h3>2</h3>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="container-item" data-img="./img/image2.jpg">
+                    <a href="#" class="container-item" data-img="./img/image14.jpg">
                         <h3>3</h3>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="container-item" data-img="./img/image1.jpg">
+                    <a href="#" class="container-item" data-img="./img/image4.jpg">
                         <h3>4</h3>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="container-item" data-img="./img/image2.jpg">
+                    <a href="#" class="container-item" data-img="./img/image11.jpg">
                         <h3>5</h3>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="container-item" data-img="./img/image1.jpg">
+                    <a href="#" class="container-item" data-img="./img/image6.jpg">
                         <h3>6</h3>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="container-item" data-img="./img/image2.jpg">
+                    <a href="#" class="container-item" data-img="./img/image8.jpg">
                         <h3>7</h3>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="container-item" data-img="./img/image1.jpg">
+                    <a href="#" class="container-item" data-img="./img/image13.jpg">
                         <h3>8</h3>
                     </a>
                 </div>
@@ -94,14 +94,16 @@
         let ypos = e.clientY;
         const tl = gsap.timeline();
         tl.to(venueImageWrap, {
-            x: xpos,
+            x: xpos, // Adjusting the position to center the image around the cursor
             y: ypos,
+            ease: "power2.out",
+            duration: 0.3
         });
     }
 
     function venueHover(e) {
-        if (e.type === 'mouseenter') {
-            const targetImage = e.target.dataset.img;
+        if (e.type === 'mouseover') {
+            const targetImage = e.target.closest("a").dataset.img;
 
             const tl = gsap.timeline();
             tl.set(venueImage, {
