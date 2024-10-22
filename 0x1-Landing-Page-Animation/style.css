@@ -129,6 +129,50 @@ p {
     transform: translate(-50%, -50%);
     color: red;
     font-family: "Voyage";
-    font-size: 200px;
+    font-size: 300px;
 }
+
+.title .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.sidebar-text {
+    font-family: "Monument Extended";
+    position: absolute;
+    top: 20%;
+    right: 0.4em;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(117, 113, 114);
+}
+
+.projects {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: "Monument Extended";
+}
+
+.img-nav {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: #000;
+    font-family: "Monument Extended";
+}
+
+.next {
+    position: relative;
+    top: 40px;
+    left: 80px;
+    font-family: "Monument Extended";
+}
+
+
 
