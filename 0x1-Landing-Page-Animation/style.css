@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    background: #bebeb8;
+}
+
+@font-face {
+    font-family: "Monument Extended";
+    src: url("./fonts/Mon/MonumentExtended-Regular.otf"),
+         url("./fonts/Mon/MonumentExtended-Ultrabold.otf");
+}
+
+@font-face {
+    font-family: "Voyage";
+    src: url("./fonts/voy/voyage-regular.otf");
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: "Monument Extended";
+}
+
+.menu-item {
+    flex: 1;
+}
+
+.menu-left {
+    text-align: left;
+    margin-left: 4em;
+}
+
+.menu-center {
+    text-align: center;
+}
+
+.menu-right {
+    text-align: right;
+    margin-right: 4em;
+}
+
+.menu-link  {
+    padding: 0 30px;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-img {
+    position: absolute;
+    overflow: hidden;
+    margin: auto;
+    width: 50%;
+    height: 100vh;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box {
+    background: #bebeb8;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.images {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    background: #000;
+}
+
+.left {
+    background: url("../images/image1") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.right {
+    background: url("../images/image2") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-family: "Voyage";
+    font-size: 200px;
+}
+

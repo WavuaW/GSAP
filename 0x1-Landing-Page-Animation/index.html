@@ -9,10 +9,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/anime.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.4.0/esm/ionicons.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tweene/0.5.11/tweene-gsap.min.js"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <nav class="menu">
+            <div class="menu-item menu-left">
+                <div class="menu-link">about</div>
+                <div class="menu-link">contact</div>
+            </div>
+            <div class="menu-item menu-center">
+                <div class="brand-logo">skeletons</div>
+            </div>
+            <div class="menu-item menu-left">
+                <div class="search-icon">
+                    <ion-icon name="search-sharp"></ion-icon>
+                </div>
+            </div>
+        </nav>
+        <div class="images">
+            <div class="image left"></div>
+            <div class="image right"></div>
+        </div>
+        <div class="hero-image">
+            <div class="wrapper-img">
+                <div class="box"></div>
+                <div>
+                    <img src="images/image3.jpg" alt="" class="image">
+                </div>
+            </div>
+        </div>
+        <div class="header"><p class="title">antidote</p></div>
+        <div class="hero-container">
+            <div class="sidebar-text">003</div>
+            <div class="projects">projects</div>
+            <div class="img-nav">
+                <div class="prev">prev</div>
+                <div class="next">next</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
