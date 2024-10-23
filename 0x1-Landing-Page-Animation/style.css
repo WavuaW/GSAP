@@ -36,6 +36,7 @@ nav {
 
 .menu-item {
     flex: 1;
+    display: flex;    
 }
 
 .menu-left {
