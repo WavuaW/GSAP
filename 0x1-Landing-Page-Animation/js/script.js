@@ -18,29 +18,29 @@ anime.timeline().add({
 
 gsap.to(".box", {
     y: "-100%", 
-    ease: "expo.InOut", 
+    ease: "power2.InOut", 
     duration: 2.4,
-    delay: 1
+    delay: 1,
 });
 
 gsap.from("img", {
     scale: "2",
     duration: 4,
-    ease:"expo.InOut", 
+    ease:"power2.InOut", 
     delay: 0
 });
 
 gsap.to(".wrapper-img", {
-    width: "400",
-    height: "500",
-    ease: "expo.InOut",
+    width: "400px",
+    height: "500px",
+    ease: "power2.InOut",
     delay: 3.5
 });
 
 gsap.from(".img", {
     opacity: 0,
     duration: 0.4,
-    ease: "expo.InOut",
+    ease: "power2.InOut",
     delay: 3.4
 });
 
@@ -48,15 +48,15 @@ gsap.to(".left", {
     x: -400,
     rotation: -10,
     duration: 2,
-    ease: "expo.InOut",
+    ease: "power2.InOut",
     delay: 3.8
 });
 
 gsap.to(".right", {
-    x: "100",
+    x: 100,
     rotation: 10,
     duration: 2,
-    ease: "expo.InOut",
+    ease: "power2.InOut",
     delay: 3.8
 });
 
