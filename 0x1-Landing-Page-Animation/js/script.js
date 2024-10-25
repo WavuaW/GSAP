@@ -40,9 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
         gsap.to(".header .title span", {
             y: 0,
             stagger: 0.1,
-            duration: 2,
+            duration: 1,
             ease: "expo.inOut",
-            delay: 0.75
+            delay: 1
         });
     });
 
