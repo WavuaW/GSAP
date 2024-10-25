@@ -85,7 +85,7 @@ img {
     background: #bebeb8;
     opacity: 1;
     position: absolute;
-    top: 0;
+    top: 70px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -112,12 +112,12 @@ img {
 }
 
 .left {
-    background: url("../images/image2") no-repeat 50% 50%;
+    background: url("./images/image2.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
 .right {
-    background: url("../images/image3") no-repeat 50% 50%;
+    background: url("./images/image1.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
