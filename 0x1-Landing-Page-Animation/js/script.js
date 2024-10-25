@@ -16,36 +16,40 @@
 //     delay: (el, i) => 4800 + 40 * i,
 // });
 
-function splitTextIntoSpans(selector) {
-    let elements = document.querySelectorAll(selector);
-    elements.forEach((element) => {
-      let text = element.innerText;
-      let splitText = text
-        .split("")
-        .map(function (char) {
-          return `<span>${char === " " ? "&nbsp;&nbsp;" : char}</span>`;
-        })
-        .join("");
-    element.innerHTML = splitText;
-    
+document.addEventListener("DOMContentLoaded", () => {
+
+    function splitTextIntoSpans(selector) {
+        let elements = document.querySelectorAll(selector);
+        elements.forEach((element) => {
+        let text = element.innerText;
+        let splitText = text
+            .split("")
+            .map(function (char) {
+            return `<span>${char === " " ? "&nbsp;&nbsp;" : char}</span>`;
+            })
+            .join("");
+        element.innerHTML = splitText;
+        
+        });
+    }
+
+        splitTextIntoSpans(".header .title")
+
+    // console.log(splitText);
+
+        gsap.to(".header .title span", {
+            y: 0,
+            stagger: 0.1,
+            duration: 2,
+            ease: "expo.inOut",
+            delay: 0.75
+        });
     });
-}
-
-splitTextIntoSpans(".header .title")
-
-
-gsap.to(".header .title span", {
-    y: 0,
-    stagger: 0.1,
-    duration: 2,
-    ease: "power4.inOut",
-    delay: 0.75,
-});
 
 
 gsap.to(".box", {
     y: "-100vh", 
-    ease: "power2.inOut", 
+    ease: "expo.easeInOut", 
     duration: 2.4,
     delay: 1,
 });
@@ -53,7 +57,7 @@ gsap.to(".box", {
 gsap.from("img", {
     scale: "2",
     duration: 4,
-    ease:"power4.inOut", 
+    ease:"expo.easeInOut", 
     delay: 0
 });
 
@@ -94,5 +98,4 @@ gsap.from( ".menu > div, .hero-container > div", {
         ease: "power2.inOut",
         delay: 4.2,
         stagger: 0.1
-    }
-);
+});

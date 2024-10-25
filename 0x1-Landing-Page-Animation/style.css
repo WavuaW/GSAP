@@ -85,7 +85,7 @@ img {
     background: #bebeb8;
     opacity: 1;
     position: absolute;
-    top: 70px;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -133,9 +133,11 @@ p {
     font-size: 300px;
 }
 
-.title .letter {
+.title span {
     display: inline-block;
     line-height: 1em;
+    transform: translateY(500px);
+
 }
 
 .sidebar-text {
