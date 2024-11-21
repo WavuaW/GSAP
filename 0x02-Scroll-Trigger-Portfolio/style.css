@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    top: 0;
+}
+
+.container {
+    height: 50px;
+    width: 100%;
+    background-color: antiquewhite;
+}
