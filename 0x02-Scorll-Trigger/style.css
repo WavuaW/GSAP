@@ -14,6 +14,13 @@ img {
     object-fit: cover;
 }
 
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./assets/fonts/circular-std-medium-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1 {
     font-family: "Circular Std";
     font-weight: 500;
