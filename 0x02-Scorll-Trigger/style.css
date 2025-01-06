@@ -36,3 +36,35 @@ p, a {
     color: black;
     transition: color 0.3s;
 }
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items {
+    position: fixed;
+    top: 2em;
+    left: 40%;
+    display: flex;
+    gap: 0.25em;
+}
+
+nav a, .nav-items a {
+    text-transform: none;
+}
+
+.whitespace.w-1 {
+    width: 100vw;
+    height: 50vh;
+}
+
+.whitespace.w-2 {
+    width: 100vw;
+    height: 45vh;
+}
