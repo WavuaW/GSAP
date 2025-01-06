@@ -26,3 +26,13 @@ h1 {
     font-weight: 500;
     font-size: 58px;
 }
+
+p, a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Circular Std";
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    transition: color 0.3s;
+}
