@@ -95,5 +95,51 @@ nav a, .nav-items a {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    height: 100vh;
 }
 
+.img {
+    flex: 1;
+    width: 200px;
+    background-color: lightgray;
+    overflow: hidden;
+}
+
+.img img {
+    opacity: 0.9;
+
+}
+
+.index .mask {
+    position: absolute;
+    top: 0;
+    left: 2em;
+    height: 70px;
+    overflow: hidden;
+    will-change: transform;
+}
+
+.index .mask h1 {
+    position: relative;
+    will-change: transform;
+}
+
+.index .mask h1 span {
+    position: inherit;
+    display: inline-block;
+    will-change: transform;
+}
+
+.digit-wrapper, .digit-wrapper span {
+    display: inline-block;
+    position: relative;
+    will-change: transform;
+}
+
+.project-names {
+    position: fixed;
+    width: 200px;
+    top: 50vh;
+    left: 40%;
+    transform: translateX(0%);
+}
