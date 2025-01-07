@@ -68,3 +68,32 @@ nav a, .nav-items a {
     width: 100vw;
     height: 45vh;
 }
+
+.gallery {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20em;
+}
+
+.project {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.index {
+    flex: 1;
+    padding-right: 2em;
+    height: 0;
+}
+
+.images {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
