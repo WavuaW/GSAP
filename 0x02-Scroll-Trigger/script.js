@@ -21,4 +21,31 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
         });
     }
+
+    function populateGallery() {
+        const imageContainers = document.querySelectorAll
+        (".images");
+        imageContainers.forEach((container) => {
+            for (let i = 0; i < imagesPerProject; i++) {
+                if (imageIndex > totalImages) imageIndex = 1;
+                const imgContainer = document.createElement
+                ("div");
+                imgContainer.classList.add("img");
+
+                const img = document.createElement("img");
+                img.src = `./assets/img${imageIndex}.jpg`;
+                img.alt = `Project Image ${imageIndex}`;
+                imgContainer.appendChild(img);
+
+                container.appendChild(imgContainer);
+                imageIndex++;
+            }
+        });
+    }
+
+    splitTextIntoSpans(".mask h1");
+    const imagesPerProject = 6;
+    const totalImages = 50;
+    let imageIndex = 1;
+    populateGallery();
 });
