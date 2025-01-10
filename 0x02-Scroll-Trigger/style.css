@@ -195,11 +195,16 @@ nav a, .nav-items a {
     transform: scaleY(0);
 }
 
-.footer p {
+.footer {
     position: fixed;
     bottom: 2em;
     left: 40%;
     text-transform: none;
+}
+
+.footer {
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 1000px) {

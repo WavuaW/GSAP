@@ -48,4 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalImages = 50;
     let imageIndex = 1;
     populateGallery();
+
+    ScrollTrigger.create({
+        trigger: "body",
+        start: "top top",
+        end: "bottom bottom",
+        onUpdate: (self) => {
+            gsap.set(".progress-bar", {
+                scaleY: self.progress,
+            });
+        },
+    });
 });
