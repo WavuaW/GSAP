@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    top: 0;
+    background-color: #000;
+}
+
+@font-face {
+    font-family: 'gameofsquids';
+    src: url(./assets/fonts/GameOfSquids-1GMVL.ttf);
+}
+
+.container {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.header h1{
+    margin: 0;
+    font-family: 'gameofsquids';
+    font-size: 2rem;
+}
+
+.subheader {
+
+}
+
+.subheader p {
+    color: #f44786;
+    font-size: 1.2rem;
+}
+
+.footer p {
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
