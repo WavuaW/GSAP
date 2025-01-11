@@ -11,12 +11,13 @@
 
 .container {
     width: 100vw;
-    height: 600px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
+    position: relative;
 }
 .header h1{
     margin: 0;
@@ -24,16 +25,12 @@
     font-size: 2rem;
 }
 
-.subheader {
-
-}
-
 .subheader p {
     color: #f44786;
     font-size: 1.2rem;
 }
 
-.footer p {
+/* .footer p {
     color: white;
 }
 
@@ -43,4 +40,4 @@
     width: 100%;
     text-align: center;
     padding: 10px;
-}
+} */
