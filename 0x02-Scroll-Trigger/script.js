@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         start: "top top",
         end: "bottom bottom",
         onUpdate: (self) => {
+            console.log(self.progress);
             gsap.set(".progress-bar", {
                 scaleY: self.progress,
             });
