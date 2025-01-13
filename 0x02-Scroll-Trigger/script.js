@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let imageIndex = 1;
     populateGallery();
 
+    // currently broken
     ScrollTrigger.create({
         trigger: "body",
         start: "top top",
@@ -60,4 +61,16 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         },
     });
+
+    const previewImg = document.querySelector(".preview-img img");
+    const imgElements = document.querySelectorAll(".img img");
+    imgElements.forEach(img) => {
+        ScrollTrigger.create({
+            trigger: img,
+            start: "top 50%",
+            end: "bottom 50%",
+            onEnter: () => (previewImg.src = img.src),
+            onEnterBack: () => (previewImg.src = img.src), 
+        })
+    }
 });
