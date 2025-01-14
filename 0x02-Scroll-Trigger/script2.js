@@ -1,16 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const lenis = new Lenis();
-    lenis.on("scroll", ScrollTrigger.update);
-    gsap.ticker.add((time) => {
-        lenis.raf(time * 750);
+    const lenis = new Lenis({
+        smooth: true,
     });
-    gsap.ticker.lagSmoothing(0);
+
+    function raf(time) {
+        lenis.raf(time);
+        ScrollTrigger.update();
+    }
+
+    gsap.ticker.add(raf);
 
     function splitTextIntoSpans(selector) {
-        const elements = document.querySelectorAll
-        (selector);
+        const elements = document.querySelectorAll(selector);
         elements.forEach((element) => {
             const [firstDigit, secondDigit] = element.innerText;
             element.innerHTML = `
@@ -23,13 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function populateGallery() {
-        const imageContainers = document.querySelectorAll
-        (".images");
+        const imageContainers = document.querySelectorAll(".images");
         imageContainers.forEach((container) => {
             for (let i = 0; i < imagesPerProject; i++) {
                 if (imageIndex > totalImages) imageIndex = 1;
-                const imgContainer = document.createElement
-                ("div");
+                const imgContainer = document.createElement("div");
                 imgContainer.classList.add("img");
 
                 const img = document.createElement("img");
@@ -49,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let imageIndex = 1;
     populateGallery();
 
-    // currently broken
     ScrollTrigger.create({
         trigger: "body",
         start: "top top",
@@ -64,13 +64,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const previewImg = document.querySelector(".preview-img img");
     const imgElements = document.querySelectorAll(".img img");
+
     imgElements.forEach((img) => {
         ScrollTrigger.create({
             trigger: img,
             start: "top 50%",
             end: "bottom 50%",
             onEnter: () => (previewImg.src = img.src),
-            onEnterBack: () => (previewImg.src = img.src), 
-        })
-    })
+            onEnterBack: () => (previewImg.src = img.src),
+        });
+    });
 });
