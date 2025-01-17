@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    top: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -42,4 +43,41 @@
     font-weight: lighter;
     color: rgb(44, 43, 43);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Banner Section */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Adjust as needed */
+}
+
+.banner-content {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Photo Section */
+.banner-photo img {
+    max-width: 50%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-basis: 45%; /* Adjust width ratio */
+}
+
+/* Text Section */
+.banner-text {
+    flex-basis: 55%; /* Adjust width ratio */
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
 }
