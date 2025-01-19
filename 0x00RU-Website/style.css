@@ -60,10 +60,16 @@ body {
     overflow: hidden;
 }
 
+@font-face {
+    font-family: "sarasvati" ;
+    src: url("./assets/fonts/Sarasvati-9Y4w5.ttf");
+}
+
 .background-text {
     position: absolute;
+    font-family: "saravati";
     font-size: 20rem;
-    color: rgba(0, 0, 0, 0.03);
+    color: white;
     font-weight: bold;
     z-index: 1;
     white-space: nowrap;
@@ -73,7 +79,7 @@ body {
     flex: 1;
     max-width: 45%;
     position: relative;
-    z-index: 2;
+    z-index: 0;
 }
 
 .hero-image img {
