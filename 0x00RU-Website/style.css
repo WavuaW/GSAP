@@ -67,12 +67,13 @@ body {
 
 .background-text {
     position: absolute;
-    font-family: "saravati";
+    font-family: "sarasvati";
     font-size: 20rem;
     color: white;
     font-weight: bold;
     z-index: 1;
     white-space: nowrap;
+    opacity: 75%;
 }
 
 .hero-image {
@@ -84,8 +85,9 @@ body {
 
 .hero-image img {
     width: 100%;
-    height: auto;
+    height: 500px;
     border-radius: 4px;
+    object-fit: cover;
 }
 
 .hero-content {
@@ -98,8 +100,8 @@ body {
 }
 
 .hero-text {
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 0.8rem;
+    line-height: 2;
     color: #333;
     margin-bottom: 2rem;
 }
