@@ -12,14 +12,13 @@ body {
 
 /* Navigation styles */
 .wrapper {
-    background-color: #f0e7dd;
+    background-color: #B2AC88;
 }
 .nav-bar {
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f0e7dd;
     margin-left: 4rem;
 
 }
@@ -44,6 +43,8 @@ body {
 .nav-links {
     display: flex;
     gap: 2rem;
+    font-family: 'how-thick';
+    font-size: 0.8em;
 }
 
 .nav-links a {
@@ -67,7 +68,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    background-color: #f0e7dd;
     position: relative;
     overflow: hidden;
 }
@@ -75,6 +75,17 @@ body {
 @font-face {
     font-family: "sarasvati" ;
     src: url("./assets/fonts/Sarasvati-9Y4w5.ttf");
+}
+
+@font-face {
+    font-family: 'how';
+    src:url('./assets/fonts/Howthin_.ttf'),
+        url('./assets/fonts/Howfat__.ttf');
+}
+
+@font-face {
+    font-family: 'how-thick';
+    src: url('./assets/fonts/Howfat__.ttf');
 }
 
 .background-text {
@@ -85,7 +96,7 @@ body {
     font-weight: bold;
     z-index: 1;
     white-space: nowrap;
-    opacity: 70%;
+    opacity: 30%;
 }
 
 .hero-image {
@@ -114,7 +125,9 @@ body {
 }
 
 .hero-text {
-    font-size: 0.8rem;
+    font-family: 'how';
+    font-size: 1.5rem;
+    font-weight: 10000;
     line-height: 2;
     color: #333;
     margin-bottom: 2rem;
@@ -123,22 +136,22 @@ body {
 /* Button styles */
 .button-group {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: center;
 }
 
 .button {
-    padding: 0.8rem 2rem;
-    background-color: #8B4513;
+    padding: 0.4rem 1rem;
+    background-color: #1c2e4a;
     color: white;
     text-decoration: none;
-    border-radius: 4px;
-    font-weight: 500;
+    border-radius: 2px;
+    font-weight: 100;
     transition: background-color 0.3s;
 }
 
 .button:hover {
-    background-color: #6b3410;
+    background-color: #152238;
 }
 
 /* Media Queries */
