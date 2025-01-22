@@ -35,8 +35,8 @@ body {
 }
 
 .logo {
-    font-family: 'countyside';
-    font-size: 2rem;
+    font-family: 'biegenstinger';
+    font-size: 3rem;
     color: #152238;
 }
 
@@ -44,7 +44,7 @@ body {
     display: flex;
     gap: 2rem;
     font-family: 'how-thick';
-    font-size: 0.8em;
+    font-size: 0.98em;
 }
 
 .nav-links a {
@@ -55,21 +55,28 @@ body {
 .social-icons {
     display: flex;
     gap: 1rem;
+    color: #152238;
 }
 
 .social-icons a {
-    color: #333;
+    color: #445E48;
     text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
+.social-iconsa:hover {
+    color: #333;
+}
 /* Hero section styles */
 .hero-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 4rem;
     position: relative;
     overflow: hidden;
+    min-height: 80vh;
 }
 
 @font-face {
@@ -87,16 +94,33 @@ body {
     font-family: 'how-thick';
     src: url('./assets/fonts/Howfat__.ttf');
 }
+@font-face {
+    font-family: 'shakila';
+    src: url('./assets/fonts/Shakila-axPja.ttf');
+}
+
+@font-face {
+    font-family: 'ricordi';
+    src: url('./assets/fonts/TT\ Ricordi\ Allegria\ Trial\ Light.ttf');
+}
+
+@font-face {
+    font-family: 'hello';
+    src: url('./assets/fonts/HelloWorld-yYj8V.ttf');
+}
 
 .background-text {
     position: absolute;
-    font-family: "sarasvati";
-    font-size: 20rem;
+    font-family: "hello";
+    font-size: 30rem;
     color: white;
     font-weight: bold;
     z-index: 1;
     white-space: nowrap;
-    opacity: 30%;
+    opacity: 50%;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
 }
 
 .hero-image {
@@ -104,14 +128,16 @@ body {
     max-width: 45%;
     position: relative;
     z-index: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-image img {
     width: 400px;
-    height: 400px;
+    height: 500px;
     border-radius: 4px;
     object-fit: cover;
-    margin-right: 300px;
+    margin-right: 0;
 
 }
 
@@ -119,30 +145,35 @@ body {
     flex: 1;
     max-width: 50%;
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 5rem;
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-text {
     font-family: 'how';
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 10000;
     line-height: 2;
     color: #152238;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
 }
 
 /* Button styles */
 .button-group {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     justify-content: center;
 }
 
 .button {
     padding: 0.4rem 1rem;
-    background-color: #1c2e4a;
+    background-color: #445E48;
     color: white;
     text-decoration: none;
     border-radius: 2px;
@@ -151,7 +182,194 @@ body {
 }
 
 .button:hover {
-    background-color: #152238;
+    background-color: #c7cfbe;
+}
+
+.section-title {
+    font-family: 'how-thick';
+    font-size: 2rem;
+    color: #152238;
+    text-align: center;
+    margin: 4rem 0 2rem;
+}
+
+/* Research Section */
+.research-section {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.research-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.research-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.research-content {
+    padding: 1.5rem;
+}
+
+.research-content h3 {
+    font-family: 'how';
+    color: #152238;
+    margin-bottom: 0.5rem;
+}
+
+/* Blog Section */
+.blog-section {
+    padding: 4rem 2rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 1.5rem;
+}
+
+.blog-content h3 {
+    font-family: 'how';
+    color: #152238;
+    margin-bottom: 0.5rem;
+}
+
+.blog-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: #395144;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.newsletter-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.quote {
+    font-family: 'how';
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #152238;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Awards Section */
+.awards-section {
+    padding: 4rem 2rem;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.award-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.award-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.award-card h3 {
+    font-family: 'how';
+    color: #152238;
+    margin-bottom: 0.5rem;
 }
 
 /* Media Queries */
@@ -172,5 +390,16 @@ body {
 
     .background-text {
         font-size: 10rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .research-grid,
+    .blog-grid,
+    .testimonials-grid,
+    .awards-grid {
+        grid-template-columns: 1fr;
     }
 }
