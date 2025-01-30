@@ -13,18 +13,42 @@
   
   /* About section styles */
   .about-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .slider-container {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+  }
+  
+  /* Slide styles */
+  .slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
   
   .about-content {
     flex: 1;
     max-width: 60%;
-    margin-right: 4rem;
+    padding-right: 4rem;
   }
   
   .about-title {
@@ -44,25 +68,88 @@
   }
   
   .about-image img {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
-    object-fit: cover;
   }
   
+  /* Navigation buttons */
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(139, 69, 19, 0.8);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-button:hover {
+    background-color: rgba(139, 69, 19, 1);
+  }
+  
+  .prev {
+    left: 20px;
+  }
+  
+  .next {
+    right: 20px;
+  }
+  
+  /* Progress bar */
+  .progress-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .progress-dots {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #8B4513;
+  }
+  
+  /* Responsive styles */
   @media (max-width: 768px) {
-    .about-section {
+    .slide {
       flex-direction: column;
-      padding: 2rem;
+      padding: 1rem;
     }
   
     .about-content {
       max-width: 100%;
-      margin-right: 0;
+      padding-right: 0;
       margin-bottom: 2rem;
     }
   
     .about-image {
       max-width: 100%;
+    }
+  
+    .nav-button {
+      padding: 0.8rem;
+      width: 40px;
+      height: 40px;
     }
   }
