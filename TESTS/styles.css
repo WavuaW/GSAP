@@ -3,7 +3,23 @@
     top: 0;
 }
 
+@font-face {
+    font-family: "Poppins";
+    src: url("./assests/Poppins/Poppins-Black.ttf");
+}
+
+@font-face {
+    font-family: 'Durendal';
+    src: url("./assests/Durendal\ Regular.ttf");
+}
+
+@font-face {
+    font-family: 'lamore';
+    src: url("./assests/lamore-sans-script-typeface-bold-version-2023-11-27-05-28-06-utc/TTF/LAMOREBold.ttf");
+}
+
 .container {
+    font-family: 'lamore';
     font-size: 100px;
 }
 
