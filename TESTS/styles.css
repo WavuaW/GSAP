@@ -15,11 +15,13 @@
 
 @font-face {
     font-family: 'lamore';
-    src: url("./assests/lamore-sans-script-typeface-bold-version-2023-11-27-05-28-06-utc/TTF/LAMOREBold.ttf");
+    src: url("./assests/lamore-sans-script-typeface-bold-version-2023-11-27-05-28-06-utc/TTF/LAMORESemibold.ttf");
 }
 
 .container {
     font-family: 'lamore';
     font-size: 100px;
+    display: flex;
+    justify-content: center;
 }
 
