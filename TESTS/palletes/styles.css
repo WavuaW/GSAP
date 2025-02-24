@@ -1,0 +1,15 @@
+* { 
+    margin: 0;
+    top: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #dbd8ae;
+}
+
+.nav-bar{
+    height: 60px;
+    background-color: #8a9b68;
+}
